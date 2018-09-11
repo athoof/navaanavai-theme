@@ -32,7 +32,7 @@ production stylesheet in assets/built/screen.css
 @import "global.css";
 
 body {
-    background: #f4f8fb;
+    background: whitesmoke;
 }
 
 .img {
@@ -95,12 +95,12 @@ body {
     .home-template .post-feed,
     .tag-template .post-feed,
     .author-template .post-feed {
-        margin-top: -70px;
-        padding-top: 0;
+        margin-top: 0px;
+        /* padding-top: 0; */
     }
     .home-template .site-nav {
         position: relative;
-        top: -70px;
+        top: 0px;
     }
 }
 
@@ -113,7 +113,8 @@ body {
     padding-top: 12px;
     padding-bottom: 12px;
     color: #fff;
-    background: color(var(--darkgrey) l(-5%)) no-repeat center center;
+    /* background: color(var(--darkgrey) l(-5%)) no-repeat center center; */
+    background-color: #231F20;
     background-size: cover;
 }
 
@@ -152,9 +153,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10vw 4vw;
-    min-height: 200px;
-    max-height: 450px;
+    /* padding: 10vw 4vw; */
+    min-height: 165px;
+    height: 15vw;
+    /* max-height: 30vh; */
     text-align: center;
 }
 
@@ -395,6 +397,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     border-radius: 5px;
     box-shadow: rgba(39,44,49,0.06) 8px 14px 38px, rgba(39, 44, 49, 0.03) 1px 3px 8px;
     transition: all 0.5s ease;
+    border-bottom: 1px solid red;
 }
 
 .post-card:hover {
